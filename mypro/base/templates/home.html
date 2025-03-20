@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+{% block content %}
+<h2>home page</h2>
+<center>
+    <h1>user:{{request.user}}</h1>
+    <h1>email:{{request.user.email}}</h1>
+    <h1>first name:{{request.user.first_name}}</h1>
+    <h1>Authenticated:{{request.user.is_authenticated}}</h1>
+</center>
+{% endblock %}
